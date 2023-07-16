@@ -12,6 +12,7 @@ const ProductCard = ({ img, name, price }) => {
         <S.ProductImage img={img} arPaddingPercentage={100} />
       </S.InnerWrapper>
       <S.ProductName>{name} </S.ProductName>
+      <p>precio</p>
       <S.AddButton
         className="snipcart-add-item  red"
         data-item-url={`https://www.maldonado-store.com/product/${name}`}
