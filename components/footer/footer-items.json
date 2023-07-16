@@ -1,0 +1,33 @@
+[
+  {
+    "name": "Yom Yom",
+    "items": [
+      { "label": "Nuestra Historia", "url": "/nosotros" }
+    ]
+  },
+  {
+    "name": "Comidas",
+    "items": [
+      { "label": "Planes de comida", "url": "/como-funciona" },
+      { "label": "Diseña tu menú", "url": "/platos" },
+      { "label": "Menú de esta semana", "url": "/nuestros-platos" }
+    ]
+  },
+  {
+    "name": "Cuenta",
+    "items": [
+      { "label": "Cuenta", "url": "/cuenta?tab=cuenta",
+        "isTab": true,
+        "tab": "cuenta"
+      },
+      { "label": "Pedidos", "url": "/cuenta?tab=pedidos", "isTab": true,
+        "tab": "pedidos"}
+    ]
+  },
+  {
+    "name": "Contacto",
+    "items": [
+      { "label": "Contáctanos", "url": "/contactanos" }
+    ]
+  }
+]
