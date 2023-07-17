@@ -2,8 +2,19 @@ import Head from "next/head";
 import Layout from "@/components/layout/layout.component";
 import ProductsList from "@/components/products-list/products-list.component";
 import { Container } from "@mui/material";
+import { getProducts } from "@/data/products";
 
-const Home = () => {
+export const getStaticProps = async () => {
+  const response = await getProducts();
+  const products = await response?.data;
+
+  return {
+    props: { products: products },
+    revalidate: 30,
+  };
+};
+
+const Home = ({ products }) => {
   return (
     <Layout>
       <Head>
@@ -14,7 +25,7 @@ const Home = () => {
       </Head>
       <main>
         <Container>
-          <ProductsList />
+          <ProductsList products={products} />
         </Container>
       </main>
     </Layout>

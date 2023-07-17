@@ -19,18 +19,29 @@ export const CardWrapper = styled.div`
 export const InnerWrapper = styled.div`
   background-color: ${({ theme }) => theme.palette.secondary.light};
   position: relative;
+  padding: 0.5rem;
 `;
 
 export const ProductImage = styled(CustomImage)``;
 
 export const ProductName = styled(Typography)`
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-top: 1rem;
   font-weight: 600;
   color: ${({ theme }) => theme.palette.text.primary};
 `;
 
+export const Price = styled(Typography)`
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  font-weight: 600;
+
+  &::before {
+    content: "$";
+  }
+`;
+
 export const AddButton = styled(CustomButton)`
-  margin-top: 1.5rem;
+  margin-top: 0.5rem;
   width: 100%;
 `;

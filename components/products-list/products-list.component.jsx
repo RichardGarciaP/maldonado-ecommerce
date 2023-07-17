@@ -3,15 +3,16 @@ import { Grid } from "@mui/material";
 import ProductCard from "@/components/product-card/product-card.component";
 import OilImage from "../../public/assets/images/aceite.png";
 
-const ProductsList = () => {
+const ProductsList = ({ products }) => {
+  if (!products || !products.length) return null;
+
   return (
-    <Grid container spacing={2}>
-      <Grid item xs={12} sm={6} md={3}>
-        <ProductCard name="Aceite Girasol" price="3" img={OilImage} />
-      </Grid>
-      <Grid item xs={12} sm={6} md={3}>
-        <ProductCard name="Mantequilla" price="3" img={OilImage} />
-      </Grid>
+    <Grid container spacing={4}>
+      {products?.map((product, index) => (
+        <Grid item xs={12} sm={6} md={3} key={`product-${index}`}>
+          <ProductCard {...product} />
+        </Grid>
+      ))}
     </Grid>
   );
 };
