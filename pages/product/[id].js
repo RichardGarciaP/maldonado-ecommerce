@@ -1,7 +1,7 @@
 import React from "react";
 import { getOneProduct, getProducts } from "@/data/products";
 import Layout from "@/components/layout/layout.component";
-import { Container } from "@mui/material";
+import ProductDescription from "@/components/product-description/product-description.component";
 
 export const getStaticPaths = async () => {
   const response = await getProducts();
@@ -31,9 +31,7 @@ export const getStaticProps = async ({ params = {} }) => {
 const ProductItem = ({ product }) => {
   return (
     <Layout>
-      <Container>
-        <div>{JSON.stringify(product)}</div>
-      </Container>
+      <ProductDescription {...product} />
     </Layout>
   );
 };

@@ -25,21 +25,24 @@ export const InnerWrapper = styled.div`
 export const ProductImage = styled(CustomImage)``;
 
 export const ProductName = styled(Typography)`
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-top: 1rem;
-  font-weight: 600;
+  font-weight: 500;
   color: ${({ theme }) => theme.palette.text.primary};
+  min-height: 48px;
 `;
 
 export const Price = styled(Typography)`
-  font-size: 0.9rem;
+  font-size: 1rem;
   margin-top: 0.5rem;
   font-weight: 600;
 
   &::before {
-    content: "$";
+    content: "$ ";
   }
 `;
+
+export const Category = styled(Typography)``;
 
 export const AddButton = styled(CustomButton)`
   margin-top: 0.5rem;

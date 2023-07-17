@@ -48,15 +48,15 @@ const Footer = ({}) => {
               </Grid>
               <Grid item xs={12} md={6}>
                 <S.LinksWrapper className="bottom">
-                  <S.Link url="/privacy-policy/" className="thin">
-                    Privacy Policy
-                  </S.Link>
-                  <S.Link url="/terms-of-service/" className="thin">
-                    Terms of Service
-                  </S.Link>
-                  <S.Link url="/refunds/" className="thin">
-                    Refunds
-                  </S.Link>
+                  <S.ExternalLink href="https://web.facebook.com/importadorapaezmaldonado/?_rdc=1&_rdr">
+                    Facebook
+                  </S.ExternalLink>
+                  <S.ExternalLink href="https://www.instagram.com/importadora_paez_maldonado/">
+                    Instagram
+                  </S.ExternalLink>
+                  <S.ExternalLink href="https://twitter.com/marco_malgut">
+                    Twitter
+                  </S.ExternalLink>
                 </S.LinksWrapper>
               </Grid>
             </Grid>

@@ -4,15 +4,17 @@ import PropTypes from "prop-types";
 import CustomLink from "@/components/custom-link/custom-link.component";
 
 import * as S from "./product-card.styles";
+import { textEllipsis } from "@/lib/utils";
 
-const ProductCard = ({ id, title, image, price }) => {
+const ProductCard = ({ id, title, image, price, category }) => {
   return (
     <S.CardWrapper>
       <CustomLink url={`/product/${id}`}>
         <S.InnerWrapper>
-          <S.ProductImage img={image} arPaddingPercentage={100} />
+          <S.ProductImage img={image} arPaddingPercentage={120} />
         </S.InnerWrapper>
-        <S.ProductName>{title} </S.ProductName>
+        <S.ProductName>{textEllipsis(title, 50)} </S.ProductName>
+        <S.Category>{category}</S.Category>
         <S.Price>{price}</S.Price>
       </CustomLink>
       <S.AddButton
