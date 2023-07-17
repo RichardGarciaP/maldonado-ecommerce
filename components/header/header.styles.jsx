@@ -45,8 +45,8 @@ export const Logo = styled(Typography)`
 
   ${({ theme }) => theme.breakpoints.up("md")} {
     width: 166px;
-    padding-top: 0.3em;
-    padding-bottom: 0.3em;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 `;
 

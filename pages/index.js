@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Layout from "@/components/layout/layout.component";
 import ProductsList from "@/components/products-list/products-list.component";
-import { Container } from "@mui/material";
 import { getProducts } from "@/data/products";
 
 export const getStaticProps = async () => {
@@ -24,9 +23,7 @@ const Home = ({ products }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Container>
-          <ProductsList products={products} />
-        </Container>
+        <ProductsList products={products} />
       </main>
     </Layout>
   );
