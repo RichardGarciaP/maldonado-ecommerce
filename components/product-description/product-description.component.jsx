@@ -10,7 +10,11 @@ const ProductDescription = ({ image, description, title, price }) => {
       <Grid container spacing={{ xs: 2, md: 4 }}>
         <Grid item xs={12} md={6}>
           <S.ImageWrapper>
-            <CustomImage img={image} alt={description} />
+            <CustomImage
+              img={image}
+              alt={description}
+              arPaddingPercentage={100}
+            />
           </S.ImageWrapper>
         </Grid>
         <Grid item xs={12} md={6}>
