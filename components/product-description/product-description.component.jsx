@@ -5,6 +5,7 @@ import CustomImage from "@/components/custom-image/custom-image.component";
 import * as S from "./product-description.styles";
 import CustomButton from "@/components/custom-button/custom-button.component";
 import { CartButton } from "./product-description.styles";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCartOutlined";
 
 const ProductDescription = ({ id, image, description, title, price }) => {
   const [qty, setQty] = useState(1);
@@ -78,9 +79,20 @@ const ProductDescription = ({ id, image, description, title, price }) => {
               data-item-image={image}
               className={`snipcart-add-item red`}
             >
+              <ShoppingCartIcon />
               Agregar
             </S.CartButton>
           </S.InputsWrapper>
+          <S.PaymentMethodsWrapper>
+            <S.PaymentText>Métodos de pago</S.PaymentText>
+            <S.ProductDescription className="no-pt">
+              Hasta <span> 6 meses sin intereses</span>
+            </S.ProductDescription>
+            <S.IconsWrapper>
+              <S.VisaIcon />
+              <S.MastercardIcon />
+            </S.IconsWrapper>
+          </S.PaymentMethodsWrapper>
         </Grid>
       </Grid>
     </S.Wrapper>

@@ -13,7 +13,7 @@ export const CustomButton = styled(LoadingButton)`
   border: 1px solid transparent;
   font-size: ${({ theme }) => theme.typography.pxToRem(14)};
   font-weight: 900 !important;
-  border-radius: 250px;
+  border-radius: 4px;
   min-height: 38px;
   line-height: 17px;
   letter-spacing: -0.01em;

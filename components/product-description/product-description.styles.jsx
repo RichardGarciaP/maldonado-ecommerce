@@ -3,6 +3,9 @@ import { TextField, Typography } from "@mui/material";
 import { Container } from "@mui/material";
 import CustomButton from "@/components/custom-button/custom-button.component";
 
+import Mastercard from "../../public/assets/icons/mastercard.svg";
+import Visa from "../../public/assets/icons/visa.svg";
+
 export const Wrapper = styled(Container)`
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -23,6 +26,14 @@ export const ProductDescription = styled(Typography)`
   font-size: 1rem;
   line-height: 1.2rem;
   margin-top: 1.5rem;
+
+  &.no-pt {
+    margin-top: 0;
+  }
+
+  span {
+    font-weight: 600;
+  }
 `;
 
 export const Price = styled(Typography)`
@@ -114,4 +125,38 @@ export const QtyInput = styled(TextField)`
 
 export const CartButton = styled(CustomButton)`
   padding: 1rem 5.1rem !important;
+  .text {
+    display: flex;
+    align-items: center;
+    .MuiSvgIcon-root {
+      font-size: 1.2rem;
+      margin-right: 0.5rem;
+    }
+  }
+`;
+
+export const PaymentMethodsWrapper = styled.div`
+  margin-top: 2rem;
+`;
+
+export const PaymentText = styled(Typography)`
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+`;
+
+export const IconsWrapper = styled.div`
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.2rem;
+`;
+
+export const VisaIcon = styled(Visa)`
+  width: 100%;
+  max-width: 60px;
+`;
+
+export const MastercardIcon = styled(Mastercard)`
+  width: 100%;
+  max-width: 60px;
 `;

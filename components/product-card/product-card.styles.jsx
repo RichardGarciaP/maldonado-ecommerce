@@ -7,11 +7,12 @@ export const CardWrapper = styled.div`
   cursor: pointer;
   margin-bottom: 1rem;
   position: relative;
-
+  .product-image {
+    transition: all 0.3s ease;
+  }
   &:hover {
-    .overlay-btn {
-      opacity: 1;
-      visibility: visible;
+    .product-image {
+      transform: scale(1.05);
     }
   }
 `;
@@ -33,7 +34,7 @@ export const ProductName = styled(Typography)`
 `;
 
 export const Price = styled(Typography)`
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-top: 0.5rem;
   font-weight: 600;
 
@@ -47,4 +48,12 @@ export const Category = styled(Typography)``;
 export const AddButton = styled(CustomButton)`
   margin-top: 0.5rem;
   width: 100%;
+  .text {
+    display: flex;
+    align-items: center;
+    .MuiSvgIcon-root {
+      font-size: 1.2rem;
+      margin-right: 0.5rem;
+    }
+  }
 `;

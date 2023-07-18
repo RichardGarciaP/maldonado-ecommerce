@@ -2,6 +2,8 @@ import React from "react";
 import { getOneProduct, getProducts } from "@/data/products";
 import Layout from "@/components/layout/layout.component";
 import ProductDescription from "@/components/product-description/product-description.component";
+import RelatedProducts from "@/components/related-products/related-products.component";
+import { getPort } from "next/dist/server/lib/utils";
 
 export const getStaticPaths = async () => {
   const response = await getProducts();
@@ -19,19 +21,22 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async ({ params = {} }) => {
   const { id } = params;
+  const products = await getProducts();
   const product = await getOneProduct(id);
 
   return {
     props: {
       product: product.data,
+      products: products.data,
     },
   };
 };
 
-const ProductItem = ({ product }) => {
+const ProductItem = ({ product, products }) => {
   return (
     <Layout>
       <ProductDescription {...product} />
+      <RelatedProducts products={products} category={product.category} />
     </Layout>
   );
 };

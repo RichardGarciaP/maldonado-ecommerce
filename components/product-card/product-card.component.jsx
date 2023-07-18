@@ -1,32 +1,32 @@
 import React from "react";
 import PropTypes from "prop-types";
-
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCartOutlined";
 import CustomLink from "@/components/custom-link/custom-link.component";
 
 import * as S from "./product-card.styles";
 import { textEllipsis } from "@/lib/utils";
 
-const ProductCard = ({ id, title, image, price, category }) => {
+const ProductCard = ({ id, title, image, price }) => {
   return (
     <S.CardWrapper>
       <CustomLink url={`/product/${id}`}>
-        <S.InnerWrapper>
+        <S.InnerWrapper className="product-image">
           <S.ProductImage img={image} arPaddingPercentage={120} />
         </S.InnerWrapper>
         <S.ProductName>{textEllipsis(title, 50)} </S.ProductName>
-        <S.Category>{category}</S.Category>
         <S.Price>{price}</S.Price>
       </CustomLink>
       <S.AddButton
         className="snipcart-add-item  red"
-        data-item-url={`${process.env.NEXT_PUBLIC_WEB_URL}/product/${id}`}
         data-item-id={id}
-        data-item-price={price}
-        data-item-image={image}
         data-item-name={title}
+        data-item-price={price}
         data-item-quantity={1}
+        data-item-url={`${process.env.NEXT_PUBLIC_WEB_URL}/product/${id}`}
+        data-item-image={image}
       >
-        Agregar
+        <ShoppingCartIcon />
+        <span>Agregar</span>
       </S.AddButton>
     </S.CardWrapper>
   );
