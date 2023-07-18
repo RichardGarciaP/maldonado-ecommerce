@@ -81,6 +81,6 @@ export const CartBadge = styled(Badge)`
     width: 15px;
     height: 15px;
     font-size: 10px;
-    color: red;
+    color: ${({ theme }) => theme.palette.text.light};
   }
 `;

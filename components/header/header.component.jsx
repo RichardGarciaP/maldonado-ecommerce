@@ -11,10 +11,9 @@ import { useSnipcart } from "use-snipcart/useSnipcart";
 const Header = ({}) => {
   const [isActiveMenu, setIsActiveMenu] = useState(false);
 
-  // const { cart = {} } = useSnipcart();
-  // const { items } = cart;
+  const { cart = {} } = useSnipcart();
+  const { items } = cart;
 
-  const items = 0;
   const handleToggleMenu = () => {
     setIsActiveMenu(!isActiveMenu);
   };
