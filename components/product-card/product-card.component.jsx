@@ -24,6 +24,7 @@ const ProductCard = ({ id, title, image, price, category }) => {
         data-item-price={price}
         data-item-image={image}
         data-item-name={title}
+        data-item-quantity={1}
       >
         Agregar
       </S.AddButton>
