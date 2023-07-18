@@ -34,7 +34,8 @@ export const Logo = styled(Typography)`
   color: red;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.5rem;
+
   display: flex;
   align-items: end;
   span {
@@ -47,6 +48,7 @@ export const Logo = styled(Typography)`
     width: 166px;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    font-size: 2rem;
   }
 `;
 
