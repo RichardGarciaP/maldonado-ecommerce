@@ -37,7 +37,7 @@ const Header = ({}) => {
             <S.LogoWrapper>
               <CustomLink url="/">
                 <S.Logo>
-                  Maldonado <span>store</span>{" "}
+                  Maldonado <span>store</span>
                 </S.Logo>
               </CustomLink>
             </S.LogoWrapper>
