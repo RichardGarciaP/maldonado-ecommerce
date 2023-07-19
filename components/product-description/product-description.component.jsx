@@ -75,7 +75,7 @@ const ProductDescription = ({ id, image, description, title, price }) => {
               data-item-name={title}
               data-item-price={price}
               data-item-quantity={qty}
-              data-item-url={`${process.env.NEXT_PUBLIC_WEB_URL}/product/${id}`}
+              data-item-url={`/product/${id}`}
               data-item-image={image}
               className={`snipcart-add-item red`}
             >
