@@ -51,7 +51,7 @@
     "category": "Mantequilla, margarina y mantecas",
     "qty": 40
   },{
-    "id": "6 ",
+    "id": "7 ",
     "title": "Manteca la sabrosa 1libra",
     "price": 2.10,
     "description": "Manteca vegetal comestible marca la sabrosa de 1lb/454g",
@@ -60,7 +60,7 @@
     "qty": 10
   },
   {
-    "id": "7",
+    "id": "8",
     "title": "Mantequilla de mani creamy",
     "price": 6.40,
     "description": "Mantequilla de mani de 350g marca creamy",
@@ -69,7 +69,7 @@
     "qty": 15
   },
   {
-    "id": "7",
+    "id": "9",
     "title": "Atún real 350g",
     "price": 1.60,
     "description": "Atún marca real de 350gramos",
@@ -78,7 +78,7 @@
     "qty": 20
   },
   {
-    "id": "8",
+    "id": "10",
     "title": "Atún tun tun 80g x3",
     "price": 2.75,
     "description": "Atún tun tun en aceite de girasol 80g 3 unidades ",
@@ -87,7 +87,7 @@
     "qty": 24
   },
   {
-    "id": "9",
+    "id": "11",
     "title": "Atún van camp's 142g",
     "price": 1.29,
     "description": "Atún lomitos en en aceite van camp's 142g",
@@ -96,7 +96,7 @@
     "qty": 14
   },
   {
-    "id": "10",
+    "id": "12",
     "title": "Arroz Ta'Riko 1KG",
     "price": 1.59,
     "description": "Arroz marca Ta'Riko de 1Kg",
@@ -105,7 +105,7 @@
     "qty": 8
   },
   {
-    "id": "11",
+    "id": "13",
     "title": "Fideos Don Vittorio 400g X3",
     "price": 3.59,
     "description": "Arroz marca Ta'Riko de 1Kg",
@@ -114,7 +114,7 @@
     "qty": 11
   },
   {
-    "id": "11",
+    "id": "14",
     "title": "Fideos Oriental 200g",
     "price": 1.05,
     "description": "Fideos Oriental 200g",
