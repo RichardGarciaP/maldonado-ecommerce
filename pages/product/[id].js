@@ -4,12 +4,13 @@ import Layout from "@/components/layout/layout.component";
 import ProductDescription from "@/components/product-description/product-description.component";
 import RelatedProducts from "@/components/related-products/related-products.component";
 import { getPort } from "next/dist/server/lib/utils";
+import PRODUCTS from "../../lib/dev-data.json";
 
 export const getStaticPaths = async () => {
   const response = await getProducts();
   const products = response.data;
 
-  const paths = products.map(({ id }) => {
+  const paths = PRODUCTS.map(({ id }) => {
     return { params: { id: id.toString() } };
   });
 
@@ -21,13 +22,15 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async ({ params = {} }) => {
   const { id } = params;
-  const products = await getProducts();
-  const product = await getOneProduct(id);
+  // const products = await getProducts();
+  const products = PRODUCTS.filter((product) => product.id !== id);
+  // const product = await getOneProduct(id);
+  const product = PRODUCTS.find((product) => product.id === id);
 
   return {
     props: {
-      product: product.data,
-      products: products.data,
+      product,
+      products,
     },
   };
 };
@@ -36,7 +39,9 @@ const ProductItem = ({ product, products }) => {
   return (
     <Layout>
       <ProductDescription {...product} />
-      <RelatedProducts products={products} category={product.category} />
+      {products && products.length && (
+        <RelatedProducts products={products} category={product.category} />
+      )}
     </Layout>
   );
 };

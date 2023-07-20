@@ -5,10 +5,18 @@ import CustomButton from "@/components/custom-button/custom-button.component";
 
 import Mastercard from "../../public/assets/icons/mastercard.svg";
 import Visa from "../../public/assets/icons/visa.svg";
+import CustomLink from "@/components/custom-link/custom-link.component";
 
 export const Wrapper = styled(Container)`
   padding-top: 3rem;
   padding-bottom: 3rem;
+`;
+
+export const SlugWrapper = styled(Typography)`
+  color: ${({ theme }) => theme.palette.text.other};
+  opacity: 0.7;
+  font-weight: 0.82;
+  margin-bottom: 1rem;
 `;
 
 export const ImageWrapper = styled.div`

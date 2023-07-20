@@ -2,13 +2,14 @@ import Head from "next/head";
 import Layout from "@/components/layout/layout.component";
 import ProductsList from "@/components/products-list/products-list.component";
 import { getProducts } from "@/data/products";
+import PRODUCTS from "../lib/dev-data.json";
 
 export const getStaticProps = async () => {
   const response = await getProducts();
   const products = await response?.data;
 
   return {
-    props: { products: products },
+    props: { products: PRODUCTS },
     revalidate: 30,
   };
 };

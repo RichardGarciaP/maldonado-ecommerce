@@ -1,0 +1,125 @@
+[
+  {
+    "id": "1",
+    "title": "Aceite girasol 1L",
+    "price": 3.79,
+    "description": "Aceite de 1 litro marca girasol",
+    "image": "/assets/images/aceite.png",
+    "category": "Aceites y Vinagres",
+    "qty": 20
+  },
+  {
+    "id": "2",
+    "title": "Aceite la favorita 1L",
+    "price": 2.79,
+    "description": "Aceite de 1 litro marca la favorita",
+    "image": "/assets/images/la-favorita.png",
+    "category": "Aceites y Vinagres",
+    "qty": 30
+  },
+  {
+    "id": "3",
+    "title": "Aceite criollo 500ml",
+    "price": 1.50,
+    "description": "Aceite de 500 ml marca criollo",
+    "image": "/assets/images/CriolloAchiote500ml.png",
+    "category": "Aceites y Vinagres",
+    "qty": 10
+  },
+  {
+    "id": "4",
+    "title": "Achiote criollo 500ml",
+    "price": 1.70,
+    "description": "Aceite de 500 ml marca criollo",
+    "image": "/assets/images/criollo.png",
+    "category": "Aceites y Vinagres",
+    "qty": 15
+  },{
+    "id": "5",
+    "title": "Margarina girasol 500g",
+    "price": 2.5,
+    "description": "Margarina marca girasol 500g",
+    "image": "/assets/images/MARGARINA.png",
+    "category": "Mantequilla, margarina y mantecas",
+    "qty": 20
+  },{
+    "id": "6",
+    "title": "Margarina klar 1000g",
+    "price": 3.50,
+    "description": "Margarina marca klar 1000g",
+    "image": "/assets/images/klar-margarina.png",
+    "category": "Mantequilla, margarina y mantecas",
+    "qty": 40
+  },{
+    "id": "6 ",
+    "title": "Manteca la sabrosa 1libra",
+    "price": 2.10,
+    "description": "Manteca vegetal comestible marca la sabrosa de 1lb/454g",
+    "image": "/assets/images/la-sabrosa-manteca.png",
+    "category": "Mantequilla, margarina y mantecas",
+    "qty": 10
+  },
+  {
+    "id": "7",
+    "title": "Mantequilla de mani creamy",
+    "price": 6.40,
+    "description": "Mantequilla de mani de 350g marca creamy",
+    "image": "/assets/images/mantequilla-creami.jpg",
+    "category": "Mantequilla, margarina y mantecas",
+    "qty": 15
+  },
+  {
+    "id": "7",
+    "title": "Atún real 350g",
+    "price": 1.60,
+    "description": "Atún marca real de 350gramos",
+    "image": "/assets/images/Atun-real-350gr.webp",
+    "category": "Enlatados y conservas",
+    "qty": 20
+  },
+  {
+    "id": "8",
+    "title": "Atún tun tun 80g x3",
+    "price": 2.75,
+    "description": "Atún tun tun en aceite de girasol 80g 3 unidades ",
+    "image": "/assets/images/atun-tun-tun.webp",
+    "category": "Enlatados y conservas",
+    "qty": 24
+  },
+  {
+    "id": "9",
+    "title": "Atún van camp's 142g",
+    "price": 1.29,
+    "description": "Atún lomitos en en aceite van camp's 142g",
+    "image": "/assets/images/atun-van-camps.webp",
+    "category": "Enlatados y conservas",
+    "qty": 14
+  },
+  {
+    "id": "10",
+    "title": "Arroz Ta'Riko 1KG",
+    "price": 1.59,
+    "description": "Arroz marca Ta'Riko de 1Kg",
+    "image": "/assets/images/arroz-tariko.png",
+    "category": "Arroz y fideos",
+    "qty": 8
+  },
+  {
+    "id": "11",
+    "title": "Fideos Don Vittorio 400g X3",
+    "price": 3.59,
+    "description": "Arroz marca Ta'Riko de 1Kg",
+    "image": "/assets/images/fideos-don-vittorio.webp",
+    "category": "Arroz y fideos",
+    "qty": 11
+  },
+  {
+    "id": "11",
+    "title": "Fideos Oriental 200g",
+    "price": 1.05,
+    "description": "Fideos Oriental 200g",
+    "image": "/assets/images/fideos-oriental.webp",
+    "category": "Arroz y fideos",
+    "qty": 32
+  }
+]

@@ -6,8 +6,16 @@ import * as S from "./product-description.styles";
 import CustomButton from "@/components/custom-button/custom-button.component";
 import { CartButton } from "./product-description.styles";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCartOutlined";
+import CustomLink from "@/components/custom-link/custom-link.component";
 
-const ProductDescription = ({ id, image, description, title, price }) => {
+const ProductDescription = ({
+  id,
+  image,
+  description,
+  title,
+  price,
+  qty: quantity,
+}) => {
   const [qty, setQty] = useState(1);
 
   const incrementQty = () => {
@@ -25,6 +33,9 @@ const ProductDescription = ({ id, image, description, title, price }) => {
 
   return (
     <S.Wrapper>
+      <S.SlugWrapper>
+        <CustomLink url="/">Shop</CustomLink> / {title}
+      </S.SlugWrapper>
       <Grid container spacing={{ xs: 2, md: 4 }}>
         <Grid item xs={12} md={6}>
           <S.ImageWrapper>
@@ -40,7 +51,7 @@ const ProductDescription = ({ id, image, description, title, price }) => {
           {description && (
             <S.ProductDescription>{description}</S.ProductDescription>
           )}
-          <S.Price>{price * qty}</S.Price>
+          <S.Price>{(price * qty).toFixed(2)}</S.Price>
           <S.InputsWrapper>
             <S.InnerWrapper>
               <S.Text>Cantidad</S.Text>
@@ -64,6 +75,7 @@ const ProductDescription = ({ id, image, description, title, price }) => {
                 <S.QtyButton
                   className="right"
                   onClick={incrementQty}
+                  disabled={qty === quantity}
                   size="small"
                 >
                   +
