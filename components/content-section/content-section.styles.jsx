@@ -2,10 +2,12 @@ import styled from "@emotion/styled";
 import { Typography } from "@mui/material";
 
 export const Title = styled(Typography)`
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 1.8rem;
+  font-weight: 800;
+
   line-height: 150%;
   margin-bottom: 1.5rem;
+  color: ${({ theme }) => theme.palette.primary.main};
 `;
 
 export const Description = styled(Typography)`
