@@ -41,7 +41,8 @@
     "description": "Margarina marca girasol 500g",
     "image": "/assets/images/MARGARINA.png",
     "category": "Mantequilla, margarina y mantecas",
-    "qty": 20
+    "qty": 20,
+    "bestSeller": true
   },{
     "id": "6",
     "title": "Margarina klar 1000g",
@@ -75,7 +76,8 @@
     "description": "Atún marca real de 350gramos",
     "image": "/assets/images/Atun-real-350gr.webp",
     "category": "Enlatados y conservas",
-    "qty": 20
+    "qty": 20,
+    "bestSeller": true
   },
   {
     "id": "10",
@@ -93,7 +95,8 @@
     "description": "Atún lomitos en en aceite van camp's 142g",
     "image": "/assets/images/atun-van-camps.webp",
     "category": "Enlatados y conservas",
-    "qty": 14
+    "qty": 14,
+    "bestSeller": true
   },
   {
     "id": "12",
@@ -111,7 +114,9 @@
     "description": "Arroz marca Ta'Riko de 1Kg",
     "image": "/assets/images/fideos-don-vittorio.webp",
     "category": "Arroz y fideos",
-    "qty": 11
+    "qty": 11,
+    "bestSeller": true
+
   },
   {
     "id": "14",
@@ -120,6 +125,7 @@
     "description": "Fideos Oriental 200g",
     "image": "/assets/images/fideos-oriental.webp",
     "category": "Arroz y fideos",
-    "qty": 32
+    "qty": 32,
+    "bestSeller": true
   }
 ]

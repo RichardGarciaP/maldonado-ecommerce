@@ -7,13 +7,16 @@ import "swiper/css";
 import "swiper/css/navigation";
 import * as S from "./related-products.styles";
 
-const RelatedProducts = ({ products, category }) => {
+const RelatedProducts = ({ title, products, category, isBestSellers }) => {
   const [productsFiltered, setProductsFiltered] = useState([]);
   useEffect(() => {
-    const newProducts = products.filter(
-      (product) => product.category === category,
-    );
-
+    if (!isBestSellers) {
+      const newProducts = products.filter(
+        (product) => product.category === category,
+      );
+      setProductsFiltered(newProducts);
+    }
+    const newProducts = products.filter((product) => product?.bestSeller);
     setProductsFiltered(newProducts);
   }, []);
 
@@ -22,7 +25,9 @@ const RelatedProducts = ({ products, category }) => {
   return (
     <S.SectionWrapper>
       <S.CustomContainer>
-        <S.Title>Productos Relacionados</S.Title>
+        {title && (
+          <S.Title className={isBestSellers ? "center" : ""}>{title}</S.Title>
+        )}
         <Swiper slidesPerView={4} spaceBetween={30}>
           {productsFiltered.map((product, index) => (
             <SwiperSlide key={`product-slide-${index}`}>

@@ -24,7 +24,7 @@ export const getStaticProps = async ({ params = {} }) => {
   const { id } = params;
   // const products = await getProducts();
   const products = PRODUCTS.filter((product) => product.id !== id);
-  // const product = await getOneProduct(id);
+  // const products = await getOneProduct(id);
   const product = PRODUCTS.find((product) => product.id === id);
 
   return {

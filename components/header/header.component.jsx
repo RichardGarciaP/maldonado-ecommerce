@@ -41,6 +41,14 @@ const Header = ({}) => {
                 </S.Logo>
               </CustomLink>
             </S.LogoWrapper>
+            <S.CenterWrapper>
+              <S.Link url="/">
+                <span> Inicio</span>
+              </S.Link>
+              <S.Link url="/products">
+                <span>Tienda</span>
+              </S.Link>
+            </S.CenterWrapper>
             <S.RightWrapper>
               <S.IconWrapper onClick={handleOpenCart}>
                 <S.CartBadge badgeContent={items?.count ?? 0} color="primary">

@@ -1,15 +1,10 @@
 import styled from "@emotion/styled";
 import { Container, Typography } from "@mui/material";
-
-export const SectionWrapper = styled.section`
-  overflow: hidden;
-`;
+import { SwiperSlide } from "swiper/react";
 
 export const CustomContainer = styled(Container)`
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-
   .swiper {
+    padding-bottom: 1rem;
     overflow: visible;
   }
 `;
@@ -20,8 +15,12 @@ export const Title = styled(Typography)`
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 1.5rem;
+  text-align: center;
+`;
 
-  &.center {
-    text-align: center;
-  }
+export const ButtonsWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1em;
 `;

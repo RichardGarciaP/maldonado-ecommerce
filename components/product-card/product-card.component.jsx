@@ -9,7 +9,7 @@ import { textEllipsis } from "@/lib/utils";
 const ProductCard = ({ id, title, image, price }) => {
   return (
     <S.CardWrapper>
-      <CustomLink url={`/product/${id}`}>
+      <CustomLink url={`/products/${id}`}>
         <S.InnerWrapper className="product-image">
           <S.ProductImage img={image} arPaddingPercentage={120} />
         </S.InnerWrapper>
@@ -22,7 +22,7 @@ const ProductCard = ({ id, title, image, price }) => {
         data-item-name={title}
         data-item-price={price}
         data-item-quantity={1}
-        data-item-url={`/product/${id}`}
+        data-item-url={`/products/${id}`}
         data-item-image={image}
       >
         <ShoppingCartIcon />

@@ -52,6 +52,66 @@ export const Logo = styled(Typography)`
   }
 `;
 
+export const CenterWrapper = styled.div`
+  display: flex;
+  gap: 2rem;
+  left: 50%;
+  //transform: translateX(-50%);
+  width: 100px;
+  justify-self: center;
+  margin: 0 auto;
+  ${({ theme }) => theme.breakpoints.up("md")} {
+    width: 166px;
+  }
+`;
+
+export const Link = styled(CustomLink)`
+  font-weight: 600;
+  font-size: ${({ theme }) => theme.typography.pxToRem(16)};
+  line-height: 100%;
+  color: ${({ theme }) => theme.palette.primary.main};
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &:not(.findUs):after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    height: 2px;
+    left: 0;
+    bottom: -5px;
+    transition: all 0.2s ease;
+  }
+
+  span {
+    position: relative;
+    border-bottom: 2px solid transparent;
+    &:after {
+      content: "";
+      width: 100%;
+      position: absolute;
+      height: 2px;
+      bottom: -5px;
+      left: 0;
+      -webkit-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+    }
+  }
+
+  &:hover {
+    span {
+      &:after {
+        background-color: ${({ theme }) => theme.palette.primary.main};
+      }
+    }
+  }
+
+  ${({ theme }) => theme.breakpoints.down("lg")} {
+    display: none;
+  }
+`;
+
 export const RightWrapper = styled.div`
   display: flex;
   gap: 1em;
