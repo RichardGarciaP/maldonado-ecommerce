@@ -2,10 +2,12 @@ import React from "react";
 import { Container, Grid } from "@mui/material";
 import { Facebook, Instagram, Twitter } from "@mui/icons-material";
 import * as S from "./footer.styles";
+import Newsletter from "@/components/newsletter/newsletter.component";
 
 const Footer = ({}) => {
   return (
     <>
+      <Newsletter />
       <S.CustomFooter>
         <Container maxWidth="xl">
           <S.BottomWrapper>

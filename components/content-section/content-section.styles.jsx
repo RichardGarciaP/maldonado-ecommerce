@@ -4,7 +4,7 @@ import { Typography } from "@mui/material";
 export const Title = styled(Typography)`
   font-size: 1.8rem;
   font-weight: 800;
-
+  text-transform: uppercase;
   line-height: 150%;
   margin-bottom: 1.5rem;
   color: ${({ theme }) => theme.palette.primary.main};

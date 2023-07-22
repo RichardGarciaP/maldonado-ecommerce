@@ -45,6 +45,9 @@ const Header = ({}) => {
               <S.Link url="/">
                 <span> Inicio</span>
               </S.Link>
+              <S.Link url="/">
+                <span>Categorias</span>
+              </S.Link>
               <S.Link url="/products">
                 <span>Tienda</span>
               </S.Link>
