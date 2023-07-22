@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import { Grid } from "@mui/material";
-import CustomImage from "@/components/custom-image/custom-image.component";
 
-import * as S from "./product-description.styles";
-import CustomButton from "@/components/custom-button/custom-button.component";
-import { CartButton } from "./product-description.styles";
+import CustomImage from "@/components/custom-image/custom-image.component";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCartOutlined";
 import CustomLink from "@/components/custom-link/custom-link.component";
+
+import * as S from "./product-description.styles";
 
 const ProductDescription = ({
   id,
@@ -87,7 +86,8 @@ const ProductDescription = ({
               data-item-name={title}
               data-item-price={price}
               data-item-quantity={qty}
-              data-item-url={`/product/${id}`}
+              data-item-url={`/products/${id}`}
+              data-item-max-quantity={quantity}
               data-item-image={image}
               className={`snipcart-add-item red`}
             >

@@ -6,7 +6,7 @@ import CustomLink from "@/components/custom-link/custom-link.component";
 import * as S from "./product-card.styles";
 import { textEllipsis } from "@/lib/utils";
 
-const ProductCard = ({ id, title, image, price }) => {
+const ProductCard = ({ id, title, image, price, qty }) => {
   return (
     <S.CardWrapper>
       <CustomLink url={`/products/${id}`}>
@@ -24,6 +24,7 @@ const ProductCard = ({ id, title, image, price }) => {
         data-item-quantity={1}
         data-item-url={`/products/${id}`}
         data-item-image={image}
+        data-item-max-quantity={qty}
       >
         <ShoppingCartIcon />
         <span>Agregar</span>
