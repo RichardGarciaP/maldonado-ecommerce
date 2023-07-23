@@ -8,6 +8,28 @@ import RelatedProducts from "@/components/related-products/related-products.comp
 import HeroComponent from "@/components/hero/hero.component";
 import FeaturesSection from "@/components/features-section/features-section.component";
 import ContentSection from "@/components/content-section/content-section.component";
+import { HomeScreen } from "@/src/strings/home";
+
+const Home = ({ products }) => {
+  return (
+    <Layout>
+      <main>
+        <HeroComponent title={HomeScreen.heroTitle} />
+        <FeaturesSection />
+        <ContentSection
+          title={HomeScreen.contentTile}
+          description={HomeScreen.contentDecription}
+        />
+        <Testimonials title={HomeScreen.testimonialsTitle} />
+        <RelatedProducts
+          title={HomeScreen.relatedProductsTitle}
+          products={products}
+          isBestSellers
+        />
+      </main>
+    </Layout>
+  );
+};
 
 export const getStaticProps = async () => {
   const response = await getProducts();
@@ -17,27 +39,6 @@ export const getStaticProps = async () => {
     props: { products: PRODUCTS },
     revalidate: 30,
   };
-};
-
-const Home = ({ products }) => {
-  return (
-    <Layout>
-      <main>
-        <HeroComponent title="Los mejores productos del mercado " />
-        <FeaturesSection />
-        <ContentSection
-          title="Variedad"
-          description="Disponemos de una gran variedad de productos al mejor precio del mercado"
-        />
-        <Testimonials title="Qué dicen nuestros clientes" />
-        <RelatedProducts
-          title="Productos más vendidos"
-          products={products}
-          isBestSellers
-        />
-      </main>
-    </Layout>
-  );
 };
 
 export default Home;
