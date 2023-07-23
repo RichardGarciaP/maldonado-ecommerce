@@ -316,7 +316,7 @@ export const GlobalStyles = (theme) => css`
 
   body {
     .main-wrapper {
-      /* padding-top: ${theme.navHeight}px; */
+      padding-top: ${theme.navHeight}px;
     }
 
     .top-banner {

@@ -5,7 +5,7 @@ import CustomButton from "@/components/custom-button/custom-button.component";
 import CustomImage from "@/components/custom-image/custom-image.component";
 
 export const CustomContainer = styled(Container)`
-  margin-top: 80px;
+  /* margin-top: 80px; */
   padding-top: 1rem;
   padding-bottom: 2rem;
   ${({ theme }) => theme.breakpoints.up("md")} {
