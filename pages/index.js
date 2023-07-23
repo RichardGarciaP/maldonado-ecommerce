@@ -14,7 +14,7 @@ const Home = ({ products }) => {
   return (
     <Layout>
       <main>
-        <HeroComponent title={HomeScreen.heroTitle} />
+        <HeroComponent title={HomeScreen.heroTitle} subtitle={HomeScreen.heroSubtitle} description={HomeScreen.heroDescription}/>
         <FeaturesSection />
         <ContentSection
           title={HomeScreen.contentTile}

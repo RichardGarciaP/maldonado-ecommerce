@@ -5,24 +5,49 @@ import CustomButton from "@/components/custom-button/custom-button.component";
 import CustomImage from "@/components/custom-image/custom-image.component";
 
 export const CustomContainer = styled(Container)`
-  height: calc(100vh - 80px);
+  margin-top: 80px;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  ${({ theme }) => theme.breakpoints.up("md")} {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+`;
+
+export const TitleContainer = styled.div`
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  gap: 30px;
 `;
 
-export const TitleContainer = styled.div``;
-
-export const Title = styled(Typography)`
-  font-size: 4rem;
-  max-width: 450px;
+export const CustomTitle = styled.h1`
   color: ${({ theme }) => theme.palette.primary.main};
-  font-weight: bold;
-  text-transform: uppercase;
+  font-size: 2rem;
+  line-height: 3rem;
+  margin-bottom: 2rem;
+  ${({ theme }) => theme.breakpoints.up("md")} {
+    font-size: 3rem;
+    max-width: 50%;
+  }
 `;
+
+export const CustomSubtitile = styled.h2`
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: ${({ theme }) => theme.palette.primary.dark};
+  ${({ theme }) => theme.breakpoints.up("md")} {
+    font-size: 2rem;
+  } 
+`
+
+export const CustomDescription = styled.p`
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  color: ${({ theme }) => theme.palette.primary.dark};
+  margin: 0;
+`
 
 export const StoreButtonWrapper = styled.div`
-  margin-top: 4rem;
   display: flex;
   align-items: center;
   a {
