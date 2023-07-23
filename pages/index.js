@@ -9,12 +9,14 @@ import HeroComponent from "@/components/hero/hero.component";
 import FeaturesSection from "@/components/features-section/features-section.component";
 import ContentSection from "@/components/content-section/content-section.component";
 import { HomeScreen } from "@/src/strings/home";
+import InfoRow from "@/components/info-row/info-row";
 
 const Home = ({ products }) => {
   return (
     <Layout>
       <main>
         <HeroComponent title={HomeScreen.heroTitle} subtitle={HomeScreen.heroSubtitle} description={HomeScreen.heroDescription}/>
+        <InfoRow/>
         <FeaturesSection />
         <ContentSection
           title={HomeScreen.contentTile}
