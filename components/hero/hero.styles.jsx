@@ -22,12 +22,13 @@ export const TitleContainer = styled.div`
 
 export const CustomTitle = styled.h1`
   color: ${({ theme }) => theme.palette.primary.main};
+  text-transform: uppercase;
   font-size: 2rem;
   line-height: 3rem;
   margin-bottom: 2rem;
   ${({ theme }) => theme.breakpoints.up("md")} {
     font-size: 3rem;
-    max-width: 50%;
+    max-width: 60%;
   }
 `;
 
