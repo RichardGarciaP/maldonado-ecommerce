@@ -17,7 +17,9 @@ const ContentSection = ({ title, description, img }) => {
           <Grid item xs={12} md={6}>
             <S.Title>{title}</S.Title>
             <S.Description>{description}</S.Description>
-            <CustomButton href="/products">Comprar</CustomButton>
+            <CustomButton href="/products" className="red">
+              Comprar
+            </CustomButton>
           </Grid>
           <Grid item xs={12} md={6}>
             <CustomImage img={STORE} />
