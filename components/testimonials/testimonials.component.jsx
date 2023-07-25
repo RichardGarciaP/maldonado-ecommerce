@@ -9,6 +9,24 @@ import * as S from "./testimonials.styles";
 import SliderArrow from "@/components/slider-arrow/slider-arrow.component";
 import { Navigation } from "swiper/modules";
 
+const testimonials = [
+  {
+    content: "Excelente servicio, buenos productos y gran precio!!!",
+    user: "Rosa Lopez",
+  },
+  {
+    content: "Excelente servicio, buenos productos y gran precio!!!",
+    user: "Rosa Lopez",
+  },
+  {
+    content: "Excelente servicio, buenos productos y gran precio!!!",
+    user: "Rosa Lopez",
+  },
+  {
+    content: "Excelente servicio, buenos productos y gran precio!!!",
+    user: "Rosa Lopez",
+  },
+];
 const Testimonials = ({ title, testimonials }) => {
   return (
     <SectionWrapper className="no-overflow">
