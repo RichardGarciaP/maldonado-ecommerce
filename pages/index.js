@@ -10,13 +10,34 @@ import FeaturesSection from "@/components/features-section/features-section.comp
 import ContentSection from "@/components/content-section/content-section.component";
 import { HomeScreen } from "@/src/strings/home";
 import InfoRow from "@/components/info-row/info-row";
+import { AccessTime } from "@mui/icons-material";
 
 const Home = ({ products }) => {
+  const info = {
+    title: 'Tu tienda confiable',
+    options: [
+      {
+        title: 'Disponibildad',
+        description: 'Compra tus productos donde quieras a la hora que quieras',
+        icon: <AccessTime />
+      },
+      {
+        title: 'Comodidad',
+        description: 'Recibe tus productos en la comodidad de tu hogar, tu trabajo, donde tu te encuentres',
+        icon: <AccessTime />
+      },
+      {
+        title: 'Variedad',
+        description: 'Selecciona tus productos de nuestro amplio catalogo.',
+        icon: <AccessTime />
+      }
+    ]
+  }
   return (
     <Layout>
       <main>
         <HeroComponent title={HomeScreen.heroTitle} subtitle={HomeScreen.heroSubtitle} description={HomeScreen.heroDescription}/>
-        <InfoRow/>
+        <InfoRow info={info}/>
         <FeaturesSection />
         <ContentSection
           title={HomeScreen.contentTile}
