@@ -33,14 +33,20 @@ const Newsletter = () => {
             Subscribete para recibir ofertas y promociones
           </S.Description>
           <FormProvider {...methods}>
-            <S.Form onSubmit={handleSubmit(onSubmit)}>
-              <S.Input
-                name="email"
-                label="Email"
-                validations={{ required: true }}
-              />
-              <S.Button>Enviar</S.Button>
-            </S.Form>
+            {successMessage ? (
+              <S.SuccessMessage>{successMessage}</S.SuccessMessage>
+            ) : (
+              <S.Form onSubmit={handleSubmit(onSubmit)}>
+                <S.Input
+                  name="email"
+                  label="Email"
+                  validations={{ required: true }}
+                />
+                <S.Button loading={isLoading} className="red" type="submit">
+                  Enviar
+                </S.Button>
+              </S.Form>
+            )}
           </FormProvider>
         </S.ContentWrapper>
       </S.CustomContainer>
