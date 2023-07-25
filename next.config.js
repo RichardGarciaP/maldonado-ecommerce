@@ -10,7 +10,7 @@ const nextConfig = {
     return config;
   },
   images: {
-    domains: ["fakestoreapi.com",'upload.wikimedia.org','www.tematika.com','m.media-amazon.com'],
+    domains: ["fakestoreapi.com",'www.rd.com','www.bankrate.com','media.npr.org'],
   },
 };
 

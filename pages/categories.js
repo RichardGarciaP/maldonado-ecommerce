@@ -15,16 +15,16 @@ import CategoriesHero from "@/components/categories-hero/categories-hero";
 
 const Categories = ({ products }) => {
   const categories = {
-    title: 'Yamete Kudasai',
+    title: 'Tu aliado en tus compras',
     imagesGrid: [
       {
-        image: 'https://upload.wikimedia.org/wikipedia/en/e/e1/BEASTARS%2C_volume_1.jpg'
+        image: 'https://www.rd.com/wp-content/uploads/2021/10/GettyImages-1141996490-ADedit.jpg'
       },
       {
-        image: 'https://www.tematika.com/media/catalog/Ilhsa/Imagenes/696830.jpg'
+        image: 'https://www.bankrate.com/2022/09/01102755/Grocery-shopping-in-recession.jpg'
       },
       {
-        image: 'https://m.media-amazon.com/images/I/81DpwGqhnpL._AC_UF1000,1000_QL80_.jpg'
+        image: 'https://media.npr.org/assets/img/2021/05/20/gettyimages-1257380452-59c88c4bb2d3ac5093e61fbec280f861a604ef71-s1100-c50.jpg'
       },
     ]
   }
