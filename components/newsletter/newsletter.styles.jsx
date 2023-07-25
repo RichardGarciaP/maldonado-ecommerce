@@ -36,6 +36,11 @@ export const Form = styled.form`
   display: flex;
   gap: 1rem;
   margin-top: 2rem;
+  flex-direction: column;
+
+  ${({ theme }) => theme.breakpoints.up("md")} {
+    flex-direction: row;
+  }
 `;
 
 export const Input = styled(CustomInput)`

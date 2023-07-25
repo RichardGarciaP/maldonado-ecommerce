@@ -1,22 +1,14 @@
 [
   {
-    "title": "Our Products",
-    "url": "/our-products/"
+    "title": "Inicio",
+    "url": "/"
   },
   {
-    "title": "Our Story",
-    "url": "/our-story/"
+    "title": "Categorias",
+    "url": "/categories"
   },
   {
-    "title": "Sustainability",
-    "url": "/sustainability/"
-  },
-  {
-    "title": "Recipes",
-    "url": "/recipes/"
-  },
-  {
-    "title": "Store Locator",
-    "url": "/find-us/"
+    "title": "Tienda",
+    "url": "/store"
   }
 ]

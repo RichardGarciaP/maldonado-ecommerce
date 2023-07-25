@@ -38,7 +38,7 @@ const RelatedProducts = ({ title, products, category, isBestSellers }) => {
             },
             768: {
               slidesPerView: 3,
-              spaceBetween: 60,
+              spaceBetween: 30,
             },
             1024: {
               slidesPerView: 4,

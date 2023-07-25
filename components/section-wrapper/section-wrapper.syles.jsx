@@ -16,4 +16,8 @@ export const Section = styled.section`
   &.dark-background {
     background-color: ${({ theme }) => theme.palette.bg.dark};
   }
+
+  &.light-background {
+    background-color: ${({ theme }) => theme.palette.bg.light};
+  }
 `;

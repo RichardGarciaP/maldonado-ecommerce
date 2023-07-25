@@ -11,7 +11,8 @@ export const ItemsWrapper = styled(Box)`
   background-color: ${({ theme }) => theme.palette.primary.main};
   color: white;
   padding: 2em 1.5em 2em;
-  //height: calc(100vh - ${({ theme }) => theme.navHeight}px);
+  height: 100vh;
+  height: 100dvh;
   z-index: 5;
   width: 100%;
   position: fixed;

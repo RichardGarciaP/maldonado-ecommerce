@@ -137,6 +137,12 @@ export const IconWrapper = styled.div`
   .MuiSvgIcon-root {
     color: red;
   }
+
+  ${({ theme }) => theme.breakpoints.down("md")} {
+    .label {
+      visibility: hidden;
+    }
+  }
 `;
 
 export const CartBadge = styled(Badge)`
@@ -146,5 +152,43 @@ export const CartBadge = styled(Badge)`
     height: 15px;
     font-size: 10px;
     color: ${({ theme }) => theme.palette.text.light};
+  }
+`;
+
+export const CustomBox = styled(Box)`
+  position: absolute;
+  right: 0;
+  z-index: 6;
+
+  &.cart {
+    right: 0;
+    left: unset;
+  }
+
+  svg {
+    color: white;
+  }
+`;
+
+export const MenuButton = styled(IconButton)`
+  padding-right: 0;
+  padding-left: 0;
+  svg {
+    fill: ${({ theme }) => theme.palette.primary.main};
+  }
+
+  .white {
+    fill: white;
+    svg,
+    path {
+      fill: white !important;
+    }
+  }
+
+  &.cart {
+    svg {
+      width: 17px;
+      height: 21px;
+    }
   }
 `;

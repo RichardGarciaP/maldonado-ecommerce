@@ -25,7 +25,7 @@ const Newsletter = () => {
   };
 
   return (
-    <SectionWrapper className="dark-background">
+    <SectionWrapper className="light-background">
       <S.CustomContainer>
         <S.ContentWrapper>
           <S.Title variant="h2">Subscribete a nuestras noticias</S.Title>

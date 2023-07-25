@@ -1,11 +1,15 @@
 import React, { useContext, useEffect, useState } from "react";
 import * as S from "./header.styles.jsx";
-import { useScrollTrigger } from "@mui/material";
+import { Box, useScrollTrigger } from "@mui/material";
 import CustomLink from "../custom-link/custom-link.component";
 import { isBrowser } from "../../lib/utils";
 import PersonIcon from "@mui/icons-material/Person";
 import CartIcon from "@mui/icons-material/ShoppingCart";
+import MenuIcon from "@mui/icons-material/Menu";
+
 import { useSnipcart } from "use-snipcart/useSnipcart";
+import { CloseIcon } from "next/dist/client/components/react-dev-overlay/internal/icons/CloseIcon";
+import HeaderMobile from "@/components/header/header-mobile/header-mobile.component";
 // import { AccountContext } from "../../context/account-provider";
 
 const Header = ({}) => {
@@ -59,13 +63,25 @@ const Header = ({}) => {
                 </S.CartBadge>
                 <span className="label">Cart</span>
               </S.IconWrapper>
-              <S.IconWrapper className="snipcart-customer-signin">
-                <PersonIcon />
-              </S.IconWrapper>
+              <Box sx={{ display: { md: "block", xs: "none" } }}>
+                <S.IconWrapper className="snipcart-customer-signin">
+                  <PersonIcon />
+                </S.IconWrapper>
+              </Box>
             </S.RightWrapper>
+            <S.CustomBox sx={{ display: { md: "none", xs: "block" } }}>
+              <S.MenuButton onClick={handleToggleMenu}>
+                {isActiveMenu ? <CloseIcon className="white" /> : <MenuIcon />}
+              </S.MenuButton>
+            </S.CustomBox>
           </S.MainNav>
         </S.CustomContainer>
       </S.NavWrapper>
+      <HeaderMobile
+        isActiveMenu={isActiveMenu}
+        handleClose={() => setIsActiveMenu(false)}
+        handleOpenCart={handleOpenCart}
+      />
     </S.CustomAppBar>
   );
 };
