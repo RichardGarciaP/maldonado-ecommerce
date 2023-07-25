@@ -13,5 +13,15 @@ export const ContentWrapper = styled.div`
 `
 
 export const Title = styled.h2`
-    
+    font-size: 2rem;
+`
+
+export const FeatureWrapper = styled.div`
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    span {
+        font-weight: bold;
+    }
 `

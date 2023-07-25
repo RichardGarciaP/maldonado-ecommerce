@@ -10,7 +10,7 @@ import FeaturesSection from "@/components/features-section/features-section.comp
 import ContentSection from "@/components/content-section/content-section.component";
 import { HomeScreen } from "@/src/strings/home";
 import InfoRow from "@/components/info-row/info-row";
-import { AccessTime } from "@mui/icons-material";
+import { AccessTime, DirectionsCar, LocalGroceryStore } from "@mui/icons-material";
 
 const Home = ({ products }) => {
   const info = {
@@ -24,12 +24,12 @@ const Home = ({ products }) => {
       {
         title: 'Comodidad',
         description: 'Recibe tus productos en la comodidad de tu hogar, tu trabajo, donde tu te encuentres',
-        icon: <AccessTime />
+        icon: <DirectionsCar />
       },
       {
         title: 'Variedad',
         description: 'Selecciona tus productos de nuestro amplio catalogo.',
-        icon: <AccessTime />
+        icon: <LocalGroceryStore />
       }
     ]
   }

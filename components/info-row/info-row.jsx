@@ -8,20 +8,24 @@ const InfoRow = ({info}) => {
 
   return (
     <S.Wrapper>
-        <Grid container spacing={4}>
-            <Grid item sm={12} md={6}>
+        <Grid container spacing={4} direction='row-reverse'>
+            <Grid item sm={12} md={6} style={{width:'100%'}}>
                 <CustomImage img={ProductsImage}/>
             </Grid>
             <Grid item sm={12} md={6}>
-                <S.Title>{info?.title}</S.Title>
-                {info?.options.map(({title,description,icon},index) => (
-                    <React.Fragment key={index}>
-                        <span>{title}</span>
-                        <span>{description}</span>
-                        {icon}
-                    </React.Fragment>
-           
-                ))}
+                <S.ContentWrapper>
+                    <S.Title>{info?.title}</S.Title>
+                    {info?.options.map(({title,description,icon},index) => (
+                        <React.Fragment key={index}>
+                            <S.FeatureWrapper>
+                                {icon}
+                                <span>{title}</span>
+                            </S.FeatureWrapper>
+                            <span>{description}</span>
+                        </React.Fragment>
+            
+                    ))}
+                </S.ContentWrapper>
             </Grid>
         </Grid>
     </S.Wrapper>
