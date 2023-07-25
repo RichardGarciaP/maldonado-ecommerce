@@ -11,33 +11,27 @@ import ContentSection from "@/components/content-section/content-section.compone
 import { HomeScreen } from "@/src/strings/home";
 import InfoRow from "@/components/info-row/info-row";
 import { AccessTime, DirectionsCar, LocalGroceryStore } from "@mui/icons-material";
+import CategoriesHero from "@/components/categories-hero/categories-hero";
 
 const Categories = ({ products }) => {
-  const info = {
-    title: 'Tu tienda confiable',
-    options: [
+  const categories = {
+    title: 'Yamete Kudasai',
+    imagesGrid: [
       {
-        title: 'Disponibildad',
-        description: 'Compra tus productos donde quieras a la hora que quieras',
-        icon: <AccessTime />
+        image: 'https://upload.wikimedia.org/wikipedia/en/e/e1/BEASTARS%2C_volume_1.jpg'
       },
       {
-        title: 'Comodidad',
-        description: 'Recibe tus productos en la comodidad de tu hogar, tu trabajo, donde tu te encuentres',
-        icon: <DirectionsCar />
+        image: 'https://www.tematika.com/media/catalog/Ilhsa/Imagenes/696830.jpg'
       },
       {
-        title: 'Variedad',
-        description: 'Selecciona tus productos de nuestro amplio catalogo.',
-        icon: <LocalGroceryStore />
-      }
+        image: 'https://m.media-amazon.com/images/I/81DpwGqhnpL._AC_UF1000,1000_QL80_.jpg'
+      },
     ]
   }
   return (
     <Layout>
       <main>
-        <h1>Yamete Kudasai</h1>
-        <img src='https://qph.cf2.quoracdn.net/main-qimg-965b11ec95106e64d37f5c380802c305-lq'/>
+        <CategoriesHero {...categories}/>
       </main>
     </Layout>
   );
