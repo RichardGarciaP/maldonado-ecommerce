@@ -73,7 +73,7 @@
     "id": "9",
     "title": "Atún real 350g",
     "price": 1.60,
-    "description": "Atún marca real de 350gramos",
+    "description": "Atún marca real de 350 gramos",
     "image": "/assets/images/Atun-real-350gr.webp",
     "category": "Enlatados y conservas",
     "qty": 20,
@@ -83,7 +83,7 @@
     "id": "10",
     "title": "Atún tun tun 80g x3",
     "price": 2.75,
-    "description": "Atún tun tun en aceite de girasol 80g 3 unidades ",
+    "description": "Atún tun tun en aceite de girasol 80g 3 unidades",
     "image": "/assets/images/atun-tun-tun.webp",
     "category": "Enlatados y conservas",
     "qty": 24

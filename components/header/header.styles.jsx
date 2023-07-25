@@ -35,6 +35,8 @@ export const Logo = styled(Typography)`
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 
   display: flex;
   align-items: end;
@@ -46,8 +48,7 @@ export const Logo = styled(Typography)`
 
   ${({ theme }) => theme.breakpoints.up("md")} {
     width: 166px;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+
     font-size: 2rem;
   }
 `;
