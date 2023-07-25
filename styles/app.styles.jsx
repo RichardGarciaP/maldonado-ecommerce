@@ -192,6 +192,12 @@ export const GlobalStyles = (theme) => css`
     display: block !important;
   }
 
+  .snipcart-payment-form {
+    .test-card-hint {
+      display: none !important;
+    }
+  }
+
   .emphasis {
     color: ${theme.palette.primary.main};
   }
