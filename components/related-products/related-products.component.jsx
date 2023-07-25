@@ -28,7 +28,24 @@ const RelatedProducts = ({ title, products, category, isBestSellers }) => {
         {title && (
           <S.Title className={isBestSellers ? "center" : ""}>{title}</S.Title>
         )}
-        <Swiper slidesPerView={4} spaceBetween={30}>
+        <Swiper
+          slidesPerView={4}
+          spaceBetween={30}
+          breakpoints={{
+            0: {
+              slidesPerView: 1,
+              spaceBetween: 80,
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 60,
+            },
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 20,
+            },
+          }}
+        >
           {productsFiltered.map((product, index) => (
             <SwiperSlide key={`product-slide-${index}`}>
               <ProductCard {...product} />

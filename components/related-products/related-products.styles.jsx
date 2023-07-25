@@ -11,6 +11,10 @@ export const CustomContainer = styled(Container)`
 
   .swiper {
     overflow: visible;
+    .swiper-slide {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
   }
 `;
 

@@ -61,6 +61,9 @@ export const CenterWrapper = styled.div`
   width: 100px;
   justify-self: center;
   margin: 0 auto;
+  position: absolute;
+  transform: translateX(-50%);
+
   ${({ theme }) => theme.breakpoints.up("md")} {
     width: 166px;
   }
