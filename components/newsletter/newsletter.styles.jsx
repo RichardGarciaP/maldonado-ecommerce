@@ -32,6 +32,12 @@ export const Description = styled(Typography)`
   text-align: center;
 `;
 
+export const SuccessMessage = styled(Typography)`
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 2rem;
+`;
+
 export const Form = styled.form`
   display: flex;
   gap: 1rem;
