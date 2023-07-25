@@ -13,7 +13,7 @@ const ContentSection = ({ title, description, img }) => {
   return (
     <SectionWrapper>
       <Container>
-        <Grid container spacing={4} alignItems="center">
+        <Grid container spacing={4} alignItems="center" direction='row-reverse'>
           <Grid item xs={12} md={6}>
             <S.Title>{title}</S.Title>
             <S.Description>{description}</S.Description>
