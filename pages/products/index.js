@@ -1,16 +1,13 @@
 import React from "react";
-import { getProducts } from "@/data/products";
-import PRODUCTS from "@/lib/dev-data.json";
+import { getProducts } from "@/lib/firebase";
 import ProductsList from "@/components/products-list/products-list.component";
 import Layout from "@/components/layout/layout.component";
 
-export const getStaticProps = async () => {
-  const response = await getProducts();
-  const products = await response?.data;
+export const getServerSideProps = async () => {
+  const products = await getProducts();
 
   return {
-    props: { products: PRODUCTS },
-    revalidate: 30,
+    props: { products },
   };
 };
 
