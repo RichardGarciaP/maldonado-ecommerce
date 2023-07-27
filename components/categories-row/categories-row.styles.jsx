@@ -8,3 +8,9 @@ export const ContentWrapper = styled.div`
   gap: 20px;
   height: 100%;
 `;
+
+export const CustomTitle = styled.h2`
+  margin: 0;
+  text-align: center;
+  font-size: 2rem;
+`;

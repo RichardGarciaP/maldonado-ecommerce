@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Grid, Typography } from "@mui/material";
 import CustomImage from "@/components/custom-image/custom-image.component";
 import * as S from "./categories-row.styles";
+import CustomButton from "@/components/custom-button/custom-button.component";
 
 const CategoriesRow = ({ direction, image, title, description, button }) => {
   return (
@@ -12,8 +13,9 @@ const CategoriesRow = ({ direction, image, title, description, button }) => {
         </Grid>
         <Grid item xs={12} md={6}>
           <S.ContentWrapper>
-            <span>{title}</span>
+            <S.CustomTitle>{title}</S.CustomTitle>
             <Typography>{description}</Typography>
+            <CustomButton href={button?.url}>{button?.title}</CustomButton>
           </S.ContentWrapper>
         </Grid>
       </Grid>

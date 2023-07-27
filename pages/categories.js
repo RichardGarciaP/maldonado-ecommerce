@@ -44,6 +44,10 @@ const Categories = ({ products }) => {
         "Lorem ipsum dolor sit amet consectetur adipiscing elit vel lobortis primis sociis, est hac feugiat vitae vivamus",
       image:
         "https://www.rd.com/wp-content/uploads/2021/10/GettyImages-1141996490-ADedit.jpg",
+      button: {
+        title: "Ver categoria",
+        url: "/",
+      },
     },
     {
       title: "Tu aliado en tus compras",
@@ -52,6 +56,10 @@ const Categories = ({ products }) => {
       direction: "row-reverse",
       image:
         "https://www.bankrate.com/2022/09/01102755/Grocery-shopping-in-recession.jpg",
+      button: {
+        title: "Ver categoria",
+        url: "/",
+      },
     },
     {
       title: "Tu aliado en tus compras",
@@ -59,6 +67,10 @@ const Categories = ({ products }) => {
         "Lorem ipsum dolor sit amet consectetur adipiscing elit vel lobortis primis sociis, est hac feugiat vitae vivamus",
       image:
         "https://media.npr.org/assets/img/2021/05/20/gettyimages-1257380452-59c88c4bb2d3ac5093e61fbec280f861a604ef71-s1100-c50.jpg",
+      button: {
+        title: "Ver categoria",
+        url: "/",
+      },
     },
   ];
   return (
