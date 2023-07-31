@@ -1,13 +1,15 @@
 import React from "react";
-import { useTheme } from "@mui/material";
 import Fade from "@mui/material/Fade";
+
+import { useSnipcart } from "use-snipcart/useSnipcart";
+
 import HEADER_ITEMS from "../header-items.json";
 
 import * as S from "./header-mobile.styles.jsx";
 
-const HeaderMobile = ({ isActiveMenu, handleOpenCart, handleClose }) => {
-  const height = "100";
-  const theme = useTheme();
+const HeaderMobile = ({ isActiveMenu }) => {
+  const { customer } = useSnipcart();
+
   return (
     <Fade in={isActiveMenu} mountOnEnter unmountOnExit>
       <S.ItemsWrapper id="mobileItemsWrapper">
@@ -17,8 +19,13 @@ const HeaderMobile = ({ isActiveMenu, handleOpenCart, handleClose }) => {
               {title}
             </S.MenuLink>
           ))}
+
           <S.MenuLink url="#" className="snipcart-customer-signin">
-            Iniciar sesión
+            {customer?.status !== "SignedIn" ? (
+              <span>Iniciar sesión</span>
+            ) : (
+              <span>Perfil</span>
+            )}
           </S.MenuLink>
         </S.InnerWrapper>
       </S.ItemsWrapper>

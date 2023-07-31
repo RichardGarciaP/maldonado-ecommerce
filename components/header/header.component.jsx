@@ -33,6 +33,8 @@ const Header = ({}) => {
     threshold: 100,
   });
 
+  useEffect(() => {}, []);
+
   return (
     <S.CustomAppBar position="fixed" elevation={scrollTrigger ? 4 : 0}>
       <S.NavWrapper>
