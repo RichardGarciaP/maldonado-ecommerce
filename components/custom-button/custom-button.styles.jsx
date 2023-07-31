@@ -2,6 +2,13 @@ import styled from "@emotion/styled";
 import { darken } from "@mui/system";
 import { LoadingButton } from "@mui/lab";
 
+export const LoadingWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
 export const CustomButton = styled(LoadingButton)`
   color: white;
   font-family: ${({ theme }) => theme.fonts.secondary};
@@ -21,6 +28,11 @@ export const CustomButton = styled(LoadingButton)`
   // ${({ theme }) => theme.breakpoints.up("md")} {
   //   padding: 0.9rem 1.8rem;
   // }
+
+  &:hover {
+    background-color: ${({ theme }) => theme.palette.primary.mainHover};
+  }
+
   &.light {
     background-color: white;
     color: ${({ theme }) => theme.palette.primary.main};
@@ -95,11 +107,4 @@ export const CustomButton = styled(LoadingButton)`
   .text {
     ${({ loading }) => (loading ? "opacity: 0" : "opacity: 1")};
   }
-`;
-
-export const LoadingWrapper = styled.div`
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 `;

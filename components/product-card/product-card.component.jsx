@@ -11,7 +11,7 @@ const ProductCard = ({ id, title, image, price, qty }) => {
     <S.CardWrapper>
       <CustomLink url={`/products/${id}`}>
         <S.InnerWrapper className="product-image">
-          <S.ProductImage img={image} arPaddingPercentage={120} />
+          <S.ProductImage img={image} arPaddingPercentage={120} alt={title} />
         </S.InnerWrapper>
         <S.ProductName>{textEllipsis(title, 50)} </S.ProductName>
         <S.Price>{price}</S.Price>
@@ -25,19 +25,20 @@ const ProductCard = ({ id, title, image, price, qty }) => {
         data-item-url={`${process.env.NEXT_PUBLIC_WEB_URL}/products/${id}/`}
         data-item-image={image}
         data-item-max-quantity={qty}
+        disabled={qty <= 0}
       >
         <ShoppingCartIcon />
-        <span>Agregar</span>
+        {qty === 0 ? <span>Agotado</span> : <span>Agregar</span>}
       </S.AddButton>
     </S.CardWrapper>
   );
 };
 
 ProductCard.propTypes = {
-  id: PropTypes.number.isRequired,
+  id: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  price: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
 };
 
 export default ProductCard;
