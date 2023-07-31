@@ -39,7 +39,7 @@ const Categories = ({ products }) => {
   };
   const categoriesRow = [
     {
-      title: "Richard Onichan daiski",
+      title: "Tu aliado en tus compras",
       description:
         "Lorem ipsum dolor sit amet consectetur adipiscing elit vel lobortis primis sociis, est hac feugiat vitae vivamus",
       image:
