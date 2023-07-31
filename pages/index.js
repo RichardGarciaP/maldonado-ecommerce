@@ -11,7 +11,9 @@ import {
   AccessTime,
   DirectionsCar,
   LocalGroceryStore,
+  StartOutlined,
 } from "@mui/icons-material";
+import CircleHero from "@/components/circle-hero/circle-hero";
 
 const Home = ({ products }) => {
   const info = {
@@ -35,14 +37,39 @@ const Home = ({ products }) => {
       },
     ],
   };
+  const homeHero = {
+    brownTitle: "A foodie guide by",
+    redTitle: "Vietnamase regial specialties",
+    description: "Lorem ipsum",
+    image:
+      "https://i.pinimg.com/originals/45/e2/4f/45e24f73c2e15b890b6e254c49f13ff2.jpg",
+    floatingCards: [
+      {
+        icon: <StartOutlined />,
+        title: "Title",
+        description: "Description",
+      },
+      {
+        icon: <StartOutlined />,
+        title: "Title",
+        description: "Description",
+      },
+      {
+        icon: <StartOutlined />,
+        title: "Title",
+        description: "Description",
+      },
+    ],
+  };
   return (
     <Layout>
       <main>
-        <HeroComponent
-          title={HomeScreen.heroTitle}
-          subtitle={HomeScreen.heroSubtitle}
-          description={HomeScreen.heroDescription}
-        />
+        {/*<HeroComponent*/}
+        {/*  title={HomeScreen.heroTitle}*/}
+        {/*  subtitle={HomeScreen.heroSubtitle}*/}
+        {/*  description={HomeScreen.heroDescription}*/}
+        {/*/>*/}
+        <CircleHero {...homeHero} />
         <InfoRow info={info} />
         <FeaturesSection />
         <ContentSection

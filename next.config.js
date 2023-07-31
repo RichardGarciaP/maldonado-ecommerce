@@ -15,6 +15,7 @@ const nextConfig = {
       "www.rd.com",
       "www.bankrate.com",
       "media.npr.org",
+      "i.pinimg.com",
     ],
   },
 };
