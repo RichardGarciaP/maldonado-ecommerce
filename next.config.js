@@ -10,7 +10,12 @@ const nextConfig = {
     return config;
   },
   images: {
-    domains: ["firebasestorage.googleapis.com", "www.rd.com"],
+    domains: [
+      "firebasestorage.googleapis.com",
+      "www.rd.com",
+      "www.bankrate.com",
+      "media.npr.org",
+    ],
   },
 };
 

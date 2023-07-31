@@ -10,6 +10,7 @@ import { SnipcartProvider } from "use-snipcart";
 import { GlobalStyles, SnipcartTheme } from "@/styles/app.styles";
 import { isBrowser } from "@/lib/utils";
 import { updateQty } from "@/lib/firebase";
+import Head from "next/head";
 
 const MyApp = ({ Component, pageProps }) => {
   const router = useRouter();
@@ -36,16 +37,24 @@ const MyApp = ({ Component, pageProps }) => {
   }, []);
 
   return (
-    <ThemeProvider theme={{ ...theme }}>
-      <EmotionThemeProvider theme={{ ...theme }}>
-        <SnipcartProvider>
-          <CssBaseline />
-          <Global styles={GlobalStyles} />
-          <Global styles={SnipcartTheme} />
-          <Component {...pageProps} key={router.asPath} />
-        </SnipcartProvider>
-      </EmotionThemeProvider>
-    </ThemeProvider>
+    <>
+      <ThemeProvider theme={{ ...theme }}>
+        <EmotionThemeProvider theme={{ ...theme }}>
+          <SnipcartProvider>
+            <Head>
+              <meta
+                name="viewport"
+                content="width=device-width, initial-scale=1"
+              />
+            </Head>
+            <CssBaseline />
+            <Global styles={GlobalStyles} />
+            <Global styles={SnipcartTheme} />
+            <Component {...pageProps} key={router.asPath} />
+          </SnipcartProvider>
+        </EmotionThemeProvider>
+      </ThemeProvider>
+    </>
   );
 };
 
