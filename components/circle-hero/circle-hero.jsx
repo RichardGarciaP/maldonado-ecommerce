@@ -26,6 +26,19 @@ const CircleHero = ({
         <Grid item xs={12} md={6}>
           <S.CircleWrapper>
             <S.Image img={image} />
+            <>
+              {floatingCards?.map(({ title, icon, description }, index) => (
+                <S.CardWrapper key={index} className={`card-${index}`}>
+                  <S.CardContentWrapper>
+                    <span>
+                      <strong>{title}</strong>
+                    </span>
+                    <span>{description}</span>
+                  </S.CardContentWrapper>
+                  {icon}
+                </S.CardWrapper>
+              ))}
+            </>
           </S.CircleWrapper>
         </Grid>
       </Grid>
