@@ -74,7 +74,7 @@ const ProductDescription = ({
                 <S.QtyButton
                   className="right"
                   onClick={incrementQty}
-                  disabled={qty === quantity}
+                  disabled={qty <= 1 || qty === quantity}
                   size="small"
                 >
                   +
@@ -90,6 +90,7 @@ const ProductDescription = ({
               data-item-max-quantity={quantity}
               data-item-image={image}
               className={`snipcart-add-item red`}
+              disabled={qty <= 1 || qty === quantity}
             >
               <ShoppingCartIcon />
               Agregar
