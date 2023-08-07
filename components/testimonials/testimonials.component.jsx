@@ -9,22 +9,22 @@ import * as S from "./testimonials.styles";
 import SliderArrow from "@/components/slider-arrow/slider-arrow.component";
 import { Navigation } from "swiper/modules";
 
-const testimonials = [
+const testimonialsList = [
   {
-    content: "Excelente servicio, buenos productos y gran precio!!!",
-    user: "Rosa Lopez",
+    content: "Maldonado Store ha transformado mis compras semanales en una experiencia conveniente y satisfactoria. Siempre encuentro lo que necesito, desde productos frescos hasta mis snacks favoritos. ¡Definitivamente mi tienda en línea de abarrotes preferida!",
+    user: "Laura G.",
   },
   {
-    content: "Excelente servicio, buenos productos y gran precio!!!",
-    user: "Rosa Lopez",
+    content: "Increíble variedad de productos en Maldonado Store. ¡Nunca pensé que podría encontrar ingredientes tan específicos para mis recetas! Sin duda, la mejor opción para hacer mis compras desde casa.",
+    user: "Carlos R.",
   },
   {
-    content: "Excelente servicio, buenos productos y gran precio!!!",
-    user: "Rosa Lopez",
+    content: "Maldonado Store me ha ahorrado tiempo y esfuerzo. Su servicio confiable y entrega puntual hacen que sea mi elección número uno para abarrotes en línea. ¡Recomendado al 100%!",
+    user: "Ana M.",
   },
   {
-    content: "Excelente servicio, buenos productos y gran precio!!!",
-    user: "Rosa Lopez",
+    content: "No puedo expresar lo feliz que estoy con Maldonado Store. La calidad de los productos es excepcional y su atención al cliente es impecable. ¡Finalmente encontré una tienda en línea que entiende mis necesidades!",
+    user: "Juan P",
   },
 ];
 const Testimonials = ({ title, testimonials }) => {
@@ -55,11 +55,11 @@ const Testimonials = ({ title, testimonials }) => {
             },
           }}
         >
-          {[0, 1, 2, 3].map((product, index) => (
+          {testimonialsList?.map(({content,user}, index) => (
             <SwiperSlide key={`testimonial-slide-${index}`}>
               <TestimonialCard
-                comment="Excelenete servicio, gran atención"
-                user="Rosa Ramirez"
+                comment={content}
+                user={user}
               />
             </SwiperSlide>
           ))}

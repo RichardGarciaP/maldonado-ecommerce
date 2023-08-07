@@ -9,7 +9,10 @@ import { HomeScreen } from "@/src/strings/home";
 import InfoRow from "@/components/info-row/info-row";
 import {
   AccessTime,
+  AttachMoney,
+  Check,
   DirectionsCar,
+  EmojiEmotions,
   LocalGroceryStore,
   StartOutlined,
 } from "@mui/icons-material";
@@ -38,26 +41,23 @@ const Home = ({ products }) => {
     ],
   };
   const homeHero = {
-    brownTitle: "A foodie guide by",
-    redTitle: "Vietnamase regial specialties",
-    description: "Lorem ipsum",
+    brownTitle: "Maldonado store",
+    redTitle: "Somos aliados en tu ahorro",
+    description: "Descubre nuestra tienda de abarrotes, tu aliado cercano para satisfacer tus necesidades diarias. Sumérgete en un mundo de frescura y conveniencia, donde encontrarás una amplia selección de productos de alta calidad, desde productos básicos hasta delicias locales. ",
     image:
       "https://i.pinimg.com/originals/45/e2/4f/45e24f73c2e15b890b6e254c49f13ff2.jpg",
     floatingCards: [
       {
-        icon: <StartOutlined />,
-        title: "Title",
-        description: "Description",
+        icon: <Check />,
+        title: "Bueno",
       },
       {
-        icon: <StartOutlined />,
-        title: "Title",
-        description: "Description",
+        icon: <EmojiEmotions />,
+        title: "Bonito",
       },
       {
-        icon: <StartOutlined />,
-        title: "Title",
-        description: "Description",
+        icon: <AttachMoney />,
+        title: "Barato",
       },
     ],
   };
