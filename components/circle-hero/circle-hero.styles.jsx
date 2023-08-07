@@ -6,6 +6,7 @@ export const Title = styled.h1`
   margin: 0;
   span {
     font-size: 3rem;
+    line-height: 20px;
     &.red {
       color: ${({ theme }) => theme.palette.primary.main};
     }
@@ -53,7 +54,7 @@ export const CardWrapper = styled.div`
   display: flex;
   align-items: center;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  gap: 24px;
+  gap: 20px;
   &.card-0 {
     top: 0;
     left: 0;
