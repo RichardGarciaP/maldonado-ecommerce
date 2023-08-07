@@ -6,7 +6,7 @@ import CustomButton from "@/components/custom-button/custom-button.component";
 
 const CategoriesRow = ({ direction, image, title, description, button }) => {
   return (
-    <Container>
+    <Container sx={{paddingTop:'1.5rem',paddingBottom:'1.5rem'}}>
       <Grid container spacing={4} direction={direction}>
         <Grid item xs={12} md={6} sx={{ width: "100%" }}>
           <CustomImage img={image} />
