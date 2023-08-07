@@ -15,7 +15,6 @@ const CategoriesRow = ({ direction, image, title, description, button }) => {
           <S.ContentWrapper>
             <S.CustomTitle>{title}</S.CustomTitle>
             <Typography>{description}</Typography>
-            <CustomButton href={button?.url}>{button?.title}</CustomButton>
           </S.ContentWrapper>
         </Grid>
       </Grid>

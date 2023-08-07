@@ -44,10 +44,6 @@ const Categories = ({ products }) => {
         "Explora nuestra amplia selección de arroces y fideos de primera calidad en Maldonado Store. Desde los granos más exquisitos hasta las variedades de pasta más deliciosas, estamos aquí para elevar tus platillos a otro nivel. Encuentra la base perfecta para tus creaciones culinarias en nuestra sección de Arroz y Fideos.",
       image:
         "https://www.rd.com/wp-content/uploads/2021/10/GettyImages-1141996490-ADedit.jpg",
-      button: {
-        title: "Ver categoria",
-        url: "/",
-      },
     },
     {
       title: "Aceites y Vinagres",
@@ -56,20 +52,12 @@ const Categories = ({ products }) => {
       direction: "row-reverse",
       image:
         "https://www.bankrate.com/2022/09/01102755/Grocery-shopping-in-recession.jpg",
-      button: {
-        title: "Ver categoria",
-        url: "/",
-      },
     },
     {
       title: "Mantequilla, margarina y mantecas",
       description:"Sumérgete en la suavidad y sabor con nuestra gama de Mantequilla, Margarina y Mantecas en Maldonado Store. Ya sea horneando o cocinando, encontrarás la elección perfecta para enriquecer tus recetas. Transforma tus platillos en creaciones indulgentes con nuestros productos de alta calidad. Tu cocina merece lo mejor, y aquí lo encontrarás.",
       image:
         "https://media.npr.org/assets/img/2021/05/20/gettyimages-1257380452-59c88c4bb2d3ac5093e61fbec280f861a604ef71-s1100-c50.jpg",
-      button: {
-        title: "Ver categoria",
-        url: "/",
-      },
     },
     {
       title: "Enlatados y Conservas",
@@ -77,10 +65,6 @@ const Categories = ({ products }) => {
       direction: "row-reverse",
       image:
         "https://www.bankrate.com/2022/09/01102755/Grocery-shopping-in-recession.jpg",
-      button: {
-        title: "Ver categoria",
-        url: "/",
-      },
     },
   ];
   return (
