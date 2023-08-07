@@ -33,6 +33,11 @@ export const CircleWrapper = styled.div`
   border-radius: 50%;
   position: relative;
   margin: auto;
+
+  ${({ theme }) => theme.breakpoints.down("sm")} {
+    width: 300px;
+    height: 300px;
+  }
 `;
 
 export const Image = styled(CustomImage)`
